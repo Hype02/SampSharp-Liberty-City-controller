@@ -7,8 +7,10 @@ Because the file originally was created for my own samp server (state-rp) I don'
 You will find a list and 2 functions named `CreateLC2SAObject` and `AddLC2SASimpleObject`.
 As you can see, I call there `new DynamicObject` function which is for my own streamer. Simple replace this function to your own, maybe you use popular Incognito's streamer, you can replace this function to your streamer one and it should work, remember to remove this at line 22 then: `List<GlobalObject> list = new List<GlobalObject>();` 
 Change namespace from `staterp` to your own project namespace and remove `using staterp.Streamer;`
-Everything is done.
 
+# Where is water on the map?
+In line `57` and line `62` I added extra +20 to position of Z to each object created on the map.
+It's up to you if you want to have water in LibertyCity with bugs or no water and no bugs.
 
 # What does it do?
 Controller in SampSharp in short means that you can include this file in your project solution and this .cs file will be executed without doing anything.
