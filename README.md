@@ -2,10 +2,13 @@
 Well known samp liberty city filterscript converted from pawn to SampSharp controller.
 
 # PLEASE READ
-I did convert  Liberty City filterscript for SampSharp but there is one thing you have to do.
-Because I don't know how you stream your objects on your server, you'll have to change that 1 thing in your code.
+I did convert  Liberty City filterscript for SampSharp but there is one thing you have to make it work for your own project.
+Because the file originally was created for my own samp server (state-rp) I don't know how you stream your objects on your server, you'll have to change that 1 thing in your code.
 You will find a list and 2 functions named `CreateLC2SAObject` and `AddLC2SASimpleObject`.
 As you can see, I call there `new DynamicObject` function which is for my own streamer. Simple replace this function to your own, maybe you use popular Incognito's streamer, you can replace this function to your streamer one and it should work, remember to remove this at line 22 then: `List<GlobalObject> list = new List<GlobalObject>();` 
+Change namespace from `staterp` to your own project namespace and remove `using staterp.Streamer;`
+Everything is done.
+
 
 # What does it do?
 Controller in SampSharp in short means that you can include this file in your project solution and this .cs file will be executed without doing anything.
